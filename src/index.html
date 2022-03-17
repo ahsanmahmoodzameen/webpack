@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  style="width: 100%; height: 100%; overflow: hidden; padding: 0; margin: 0"
+>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/behance/css/embed.behance.css" />
+    <link rel="stylesheet" href="./styles/flickity.css" />
+    <title>PropEngine</title>
+    <meta
+      name="viewport"
+      http-equiv="Content-Type"
+      content="width=device-width, initial-scale=1.0, text/html, charset=UTF-8"
+    />
+  </head>
+  <body
+    style="width: 100%; height: 100%; overflow: hidden; padding: 0; margin: 0"
+  >
+    <div
+      class="container"
+      style="width: 100%; height: 100%; overflow: hidden; padding: 0; margin: 0"
+    >
+      <div id="cesiumContainer" class="mainCesiumContainer"></div>
+      <div
+        id="baseLayerPickerContainer"
+        hidden=""
+        class="baseLayerPicker"
+      ></div>
+      <div id="toolbar"></div>
+      <div class="toolbar1" id="bottomHomeDiv" hidden="">
+        <button id="Home-Button" class="btn">
+          <i class="fa fa-home"></i> Home
+        </button>
+        <button id="Gallery-Button" class="btn">
+          <span class="glyphicon glyphicon-picture"></span>
+          Gallery
+        </button>
+        <button id="Surronding-Button" class="btn">
+          <span class="glyphicon glyphicon-map-marker"></span> Surrondings
+        </button>
+        <button id="Amenities-Button" class="btn">
+          <span class="glyphicon glyphicon-repeat"></span> Amenities
+        </button>
+        <button id="Search-Button" class="btn">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+        <!-- <button id="Quadrangle-Button" class="btn">
+          <span class="fa fa-building" aria-hidden="true"></span> Quadrangle
+        </button>
+-->
+        <select
+          name="projects"
+          id="project-Section"
+          class="dropDownForProjects"
+        >
+          <option value="" selected disabled hidden>Choose here</option>
+          <option value="Quadrangle-Button">Quadrangle</option>
+          <option value="Aurum">Aurum</option>
+          <option value="Opal">Opal</option>
+          <option value="Mall35">Mall35</option>
+        </select>
+      </div>
+
+      <!---->
+
+      <div class="toolbarForDescription" id="toolbarForDescription" hidden="">
+        <div class="blackdiv"></div>
+        <img
+          class="CrossStyle"
+          id="img-cross-Description"
+          src="./images/cross-white.png"
+          alt="Close"
+        />
+        <div id="mydata">
+          <table id="myTableData" cellpadding="22">
+            <tr>
+              <td>
+                <div class="internalTableButtonDiv">
+                  <button id="view360" class="descriptionButton">
+                    Check 360 Photos
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="internalTableButtonDiv">
+                  <button id="visitTours" class="descriptionButton">
+                    Visit Tours
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="internalTableButtonDiv">
+                  <button id="click-TVC-button" class="descriptionButton">
+                    Quadrangle TVC
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="internalTableButtonDiv">
+                  <button id="click-plan-button" class="descriptionButton">
+                    Check Plan
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="internalTableButtonDiv">
+                  <button id="save-plan-button" class="descriptionButton">
+                    Save Data
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!---->
+      <div class="toolbar2" hidden="" id="unitSearch-Section">
+        <p1 class="p1">Unit Search</p1>
+        <h2 id="grad2"></h2>
+        <div class="flex-container">
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; INVENTORY</p>
+              <div class="unitSearchDiv">
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-Studio1"
+                      value="1"
+                    /><span>Studio</span>
+                  </label>
+                </div>
+
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-OneBed"
+                      value="2"
+                    /><span>One</span>
+                  </label>
+                </div>
+
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-TwoBed"
+                      value="3"
+                    /><span>Two</span>
+                  </label>
+                </div>
+
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-ThreeBed"
+                      value="4"
+                    /><span>Three</span>
+                  </label>
+                </div>
+
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-Penthouse"
+                      value="5"
+                    /><span>Penthouse</span>
+                  </label>
+                </div>
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-Studio"
+                      value="6"
+                    /><span>Commercial</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div1>
+
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; STATUS</p>
+              <div class="unitSearchDiv">
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-Available"
+                      value="7"
+                    /><span>Available</span>
+                  </label>
+                </div>
+
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-Hold"
+                      value="8"
+                    /><span>Hold</span>
+                  </label>
+                </div>
+
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-Sold"
+                      value="9"
+                    /><span>Sold</span>
+                  </label>
+                </div>
+
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-Partial"
+                      value="10"
+                    /><span>Partial</span>
+                  </label>
+                </div>
+                <div id="ck-button">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="messageCheckbox"
+                      id="Search-Token"
+                      value="11"
+                    /><span>Token</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div1>
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; SURFACE</p>
+              <div class="unitSearchDiv">
+                <div class="slidecontainer">
+                  <input
+                    type="range"
+                    min="600"
+                    max="3200"
+                    value="3200"
+                    class="slider"
+                    id="myRange"
+                  />
+                </div>
+                <div class="sliderMiddleText">
+                  <p class="textColor" id="surfaceValue">Min: 600 Sq. Meter</p>
+                </div>
+                <div class="sliderLeftText">
+                  <p class="textColor">600</p>
+                </div>
+                <div class="sliderRightText">
+                  <p class="textColor">3200</p>
+                </div>
+              </div>
+            </div>
+          </div1>
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; BUDGET</p>
+              <div class="unitSearchDiv">
+                <div class="slidecontainer" id="sliderAmount">
+                  <input
+                    type="range"
+                    min="10000000"
+                    max="70000000"
+                    value="70000000"
+                    class="slider"
+                    id="myRange1"
+                  />
+                </div>
+                <div class="sliderMiddleText">
+                  <p class="textColor" id="budgetValue">Max: 700 Lac</p>
+                </div>
+                <div class="sliderLeftText">
+                  <p class="textColor">100</p>
+                </div>
+                <div class="sliderRightText">
+                  <p class="textColor">700</p>
+                </div>
+              </div>
+            </div>
+          </div1>
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">
+                &nbsp; FLOOR
+
+                <input
+                  class="customCheckBox"
+                  type="checkbox"
+                  id="FloorCheckbox"
+                  value="0"
+                />
+              </p>
+              <div id="floorDisabled">
+                <div class="unitSearchDiv">
+                  <div class="slidecontainer">
+                    <input
+                      type="range"
+                      min="0"
+                      max="11"
+                      value="11"
+                      class="slider"
+                      id="myRange2"
+                      disabled
+                    />
+                  </div>
+
+                  <div class="sliderMiddleText">
+                    <p class="textColor" id="FloorValue">Floor: Eleventh</p>
+                  </div>
+                  <div class="sliderLeftText">
+                    <p class="textColor">0</p>
+                  </div>
+                  <div class="sliderRightText">
+                    <p class="textColor">11</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div1>
+        </div>
+      </div>
+      <!---->
+      <!---->
+
+      <!---->
+      <div class="toolbar2" hidden="" id="Amenities-Section">
+        <p1 class="p1">AMENITIES</p1>
+        <h2 id="grad2"></h2>
+        <div class="flex-container">
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; LEISURE</p>
+              <div class="scrollbar" id="style-3">
+                <div class="btn-group">
+                  <buttonInternalDiv id="amenities-Entrance"
+                    >Entrance</buttonInternalDiv
+                  >
+
+                  <buttonInternalDiv id="amenities-Roof"
+                    >Roof Garden</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="amenities-Terrace"
+                    >Terrace</buttonInternalDiv
+                  >
+                </div>
+              </div>
+            </div>
+          </div1>
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; Fitness</p>
+              <div class="scrollbar" id="style-3">
+                <div class="btn-group">
+                  <buttonInternalDiv id="amenities-Pool"
+                    >Swimming Pool</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="amenities-Gym">Gym</buttonInternalDiv>
+                </div>
+              </div>
+            </div>
+          </div1>
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; FACILITIES</p>
+              <div class="scrollbar" id="style-3">
+                <div class="btn-group">
+                  <buttonInternalDiv id="amenities-pump"
+                    >Shell Golf View</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="amenities-parking"
+                    >Parking</buttonInternalDiv
+                  >
+                </div>
+              </div>
+            </div>
+          </div1>
+        </div>
+      </div>
+      <!---->
+      <!---->
+      <div class="toolbar2" hidden="" id="Surrondings-Section">
+        <p1 class="p1">SURRONDINGS</p1>
+        <h2 id="grad2"></h2>
+        <div class="flex-container">
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; DINNING</p>
+              <div class="scrollbar" id="style-3">
+                <div class="btn-group">
+                  <buttonInternalDiv id="Surrondings-chayekhana"
+                    >Chaye Khana</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-Mcdonalds"
+                    >Mcdonalds</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-Monal"
+                    >Monal</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-Rare"
+                    >Rare</buttonInternalDiv
+                  >
+                </div>
+              </div>
+            </div>
+          </div1>
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; SHOPPING</p>
+              <div class="scrollbar" id="style-3">
+                <div class="btn-group">
+                  <buttonInternalDiv id="Surrondings-EdenCenter"
+                    >Eden Center</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-GalleriaCenter"
+                    >Gulberg Galleria
+                  </buttonInternalDiv>
+                  <buttonInternalDiv id="Surrondings-AurigaMall"
+                    >Auriga Mall</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-SiddiqueCenter"
+                    >Siddique Center</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-fortressMall"
+                    >Fortress Square Mall</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-LahoreCenter"
+                    >Lahore Center</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-HafeezCenter"
+                    >Hafeez Center</buttonInternalDiv
+                  >
+                </div>
+              </div>
+            </div>
+          </div1>
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; ENTERTAINMENT</p>
+              <div class="scrollbar" id="style-3">
+                <div class="btn-group">
+                  <buttonInternalDiv id="Surrondings-Qaddafi"
+                    >Qaddafi Stadium</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-CueCinema"
+                    >CUE Cinemas</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-CineStarCinema"
+                    >CineStar Cinema</buttonInternalDiv
+                  >
+                </div>
+              </div>
+            </div>
+          </div1>
+
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; EDUCATION</p>
+              <div class="scrollbar" id="style-3">
+                <div class="btn-group">
+                  <buttonInternalDiv id="Surrondings-PunjabUni"
+                    >Punjab University</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-FCUni"
+                    >FC College</buttonInternalDiv
+                  >
+                </div>
+              </div>
+            </div>
+          </div1>
+          <div1>
+            <div class="internalToolbar">
+              <p class="internalBlackDiv">&nbsp; TRANSPORTATION</p>
+              <div class="scrollbar" id="style-3">
+                <div class="btn-group">
+                  <buttonInternalDiv id="Surrondings-Airport"
+                    >Airport</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-Speedo"
+                    >Speedo Stop</buttonInternalDiv
+                  >
+                  <buttonInternalDiv id="Surrondings-Daewoo"
+                    >Daewoo</buttonInternalDiv
+                  >
+                </div>
+              </div>
+            </div>
+          </div1>
+        </div>
+      </div>
+      <!---->
+
+      <!---->
+      <div class="toolbar6" hidden="" id="crossButton">
+        <img id="img-cross" src="./images/cross.png" alt="Close" />
+      </div>
+      <div
+        class="toolbar9"
+        hidden=""
+        id="panorama-360-view"
+        style="
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0%;
+          left: 0%;
+          z-index: 1000;
+          background: #00000080;
+        "
+      ></div>
+      <!---->
+
+      <div class="imageToolbar" hidden="" id="Gallery-section">
+        <div class="flex-container-Image">
+          <div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+          <div class="captionImage">
+            <p id="caption"></p>
+          </div>
+          <div
+            class="container"
+            style="
+              position: absolute;
+              width: 70%;
+              height: 70%;
+              top: 5%;
+              left: 15%;
+              z-index: 1000;
+            "
+          >
+            <div>
+              <div class="mySlides">
+                <img src="./images/Quadrangle/1.png" style="width: 100%" />
+              </div>
+              <div class="mySlides">
+                <img src="./images/Quadrangle/2.jpg" style="width: 100%" />
+              </div>
+              <div class="mySlides">
+                <img src="./images/Quadrangle/3.jpg" style="width: 100%" />
+              </div>
+              <div class="mySlides">
+                <img src="./images/Quadrangle/4.jpg" style="width: 100%" />
+              </div>
+              <div class="mySlides">
+                <iframe
+                  src="https://www.youtube.com/embed/YWwPyByF3Xk?enablejsapi=1&playlist=YWwPyByF3Xk&loop=1;rel=0&autoplay=1&controls=0&showinfo=0"
+                  style="width: 100%; height: 739px"
+                ></iframe>
+              </div>
+              <div class="row" hidden="" style="position: absolute; left: 25%">
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="./images/Quadrangle/1.png"
+                    style="width: 100%"
+                    onclick="currentSlide(1)"
+                    alt="Zameen Quadrangle"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="./images/Quadrangle/2.jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(2)"
+                    alt="Zameen Quadrangle"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="./images/Quadrangle/3.jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(3)"
+                    alt="Zameen Quadrangle"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="./images/Quadrangle/4.jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(4)"
+                    alt="Zameen Quadrangle"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="https://www.youtube.com/embed/YWwPyByF3Xk"
+                    style="width: 100%"
+                    onclick="currentSlide(5)"
+                    alt="Zameen Quadrangle"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+
+      <div class="paymentToolbar" hidden="" id="ImagePayment-section">
+        <div class="flex-container-Image">
+          <div class="paymentImage">
+            <p id="caption">Payment Plan</p>
+            <img
+              class="CrossPaymentStyle"
+              id="imgPayment-cross-Description"
+              src="./images/cross-white.png"
+              alt="Close"
+            />
+          </div>
+
+          <div class="paymentFrame">
+            <div>
+              <div class="mySlides1">
+                <img
+                  style="max-width: 100%; height: auto"
+                  src="./images/payment-plan.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="paymentToolbar" hidden="" id="Video-section">
+        <div class="flex-container-Image">
+          <div class="paymentImage">
+            <p id="caption">TVC</p>
+            <img
+              class="CrossPaymentStyle"
+              id="imgVideo-cross-Description"
+              src="./images/cross-white.png"
+              alt="Close"
+            />
+          </div>
+
+          <div class="videoFrame">
+            <div class="mySlides1" id="stopVideoID">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/YWwPyByF3Xk?enablejsapi=1&playlist=YWwPyByF3Xk&loop=1;rel=0&autoplay=1&controls=0&showinfo=0"
+                allowfullscreen="true"
+                allowscriptaccess="always"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="toolbar8" hidden="hidden" id="tvcVideo">
+        <img id="video-cross" src="./images/cross.png" alt="Close" />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/YWwPyByF3Xk?playlist=YWwPyByF3Xk&loop=1;rel=0&autoplay=1&controls=0&showinfo=0"
+          allowfullscreen="true"
+          allowscriptaccess="always"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <!--
+
+-->
+
+      <div class="toolbar5" hidden="hidden" id="planImage">
+        <img id="payment-cross" src="./images/cross.png" alt="Close" />
+        <img id="img-plan" src="./images/payment-plan.jpg" alt="Plan-Image" />
+      </div>
+
+      <!---->
+      <!--
+      <div class="behanceToolbar" id="Gallery-section">
+        <div class="flex-container-Imag1e">
+          <div>
+            <div class="container1">
+              <div class="content">
+                
+                <div class="behance-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="container">
+        <div class="content">
+          
+          <div class="behance-container"></div>
+        </div>
+      </div>
+
+      -->
+
+      <!--mobile Search-->
+
+      <!--
+
+      <div class="toolbar2" hidden="" id="unitSearch-Section">
+        <p1 class="p1">Unit Search</p1>
+
+        <div class="flex-container">
+          <select
+            name="Inventory"
+            id="project-Section"
+            class="dropDownForProjects"
+          >
+            <option value="" selected disabled hidden>Inventory</option>
+            <option value="studio">Studio</option>
+            <option value="Aurum">One</option>
+            <option value="Opal">Two</option>
+            <option value="Mall35">Three</option>
+            <option value="Opal">Penthouse</option>
+            <option value="Mall35">Commercial</option>
+          </select>
+
+          <select
+            name="Inventory"
+            id="project-Section"
+            class="dropDownForProjects"
+          >
+            <option value="" selected disabled hidden>Status</option>
+            <option value="studio">Available</option>
+            <option value="Aurum">Hold</option>
+            <option value="Opal">Sold</option>
+            <option value="Mall35">Partial</option>
+            <option value="Opal">Token</option>
+          </select>
+
+          <select
+            name="Inventory"
+            id="project-Section"
+            class="dropDownForProjects"
+          >
+            <option value="" selected disabled hidden>Surface</option>
+            <input
+              type="range"
+              min="600"
+              max="3200"
+              value="3200"
+              class="slider"
+              id="myRange"
+            />
+          </select>
+
+          <select
+            name="Inventory"
+            id="project-Section"
+            class="dropDownForProjects"
+          >
+            <option value="" selected disabled hidden>Price</option>
+            <input
+              type="range"
+              min="10000000"
+              max="70000000"
+              value="70000000"
+              class="slider"
+              id="myRange1"
+            />
+          </select>
+
+          <select
+            name="Inventory"
+            id="project-Section"
+            class="dropDownForProjects"
+          >
+            <option value="" selected disabled hidden>Floor</option>
+            <input
+              type="range"
+              min="600"
+              max="3200"
+              value="3200"
+              class="slider"
+              id="myRange"
+            />
+          </select>
+          <input
+            type="range"
+            min="0"
+            max="11"
+            value="11"
+            class="slider"
+            id="myRange2"
+            disabled
+          />
+
+        </div>
+      </div>
+      -->
+      <!---->
+
+      <div class="imageToolbar" hidden="" id="behance-section">
+        <div class="flex-container-Image">
+          <div class="paymentImage">
+            <p id="caption">Renders</p>
+            <img
+              class="CrossPaymentStyle"
+              id="portfolio-cross-Description"
+              src="./images/cross-white.png"
+              alt="Close"
+            />
+          </div>
+
+          <iframe
+            src="https://www.behance.net/gallery/116486803/Zameen-Quadrangle-by-Zameen-Developments?iframe=1&ilo0=1"
+            style="
+              position: absolute;
+              width: 70%;
+              height: 90.5%;
+              top: 5%;
+              left: 15%;
+              z-index: 1000;
+            "
+            allowfullscreen
+            sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+          ></iframe>
+          <!--
+          <iframe
+            src="https://api.jquery.com/ready/"
+            title="description"
+            style="
+              position: absolute;
+              width: 70%;
+              height: 90.5%;
+              top: 5%;
+              left: 15%;
+              z-index: 1000;
+            "
+          ></iframe>
+          -->
+        </div>
+      </div>
+    </div>
+    <script></script>
+    <script src="./styles/jquery-1.9.0.min.js"></script>
+    <script
+      src="./styles/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./styles/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./styles/pannellum.css"
+      integrity="sha512-UoT/Ca6+2kRekuB1IDZgwtDt0ZUfsweWmyNhMqhG4hpnf7sFnhrLrO0zHJr2vFp7eZEvJ3FN58dhVx+YMJMt2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./styles/jquery.min.js"></script>
+    <script src="./styles/bootstrap.min.js"></script>
+    <script
+      src="./styles/pannellum.js"
+      integrity="sha512-EmZuy6vd0ns9wP+3l1hETKq/vNGELFRuLfazPnKKBbDpgZL0sZ7qyao5KgVbGJKOWlAFPNn6G9naB/8WnKN43Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./ScriptsFunctions.js"></script>
+
+    <!-- jQuery lib -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- jQuery Easing lib (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+
+    <!-- Embed Behance Javascript -->
+    <script
+      type="text/javascript"
+      src="./styles/behance/js/embed.behance.js"
+    ></script>
+
+    <script src="./styles/flickity.pkgd.js"></script>
+    <script src="./styles/iconify.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1061 @@
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 171px;
+}
+.flex-container > div1 {
+  /* background-color: #f1f1f1; */
+  width: 191px;
+  margin: 0px 0px 0px 0px;
+  margin: 0px 38px 0px 31px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 15px;
+}
+.flex-container-Image {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 1080px;
+}
+.mainCesiumContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.captionImage {
+  position: relative;
+  text-align: center;
+  background-color: #222;
+
+  color: white;
+  width: 1920px;
+  left: -50px;
+  top: 2%;
+  height: 25px;
+}
+
+.paymentImage {
+  position: relative;
+  text-align: center;
+  background-color: #222;
+
+  color: white;
+  width: 1920px;
+  left: 0px;
+  top: 2%;
+  height: 25px;
+}
+.mySlides1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.videoFrame {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 5%;
+  left: 15%;
+  z-index: 1000;
+}
+.paymentFrame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5%;
+  left: 33%;
+  z-index: 1000;
+}
+.imageToolbar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  /* background: #58585880; */
+  backdrop-filter: blur(5px);
+}
+.imageForDisplayData {
+  width: 289px;
+  height: 258px;
+}
+.behanceToolbar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: #fffdfd;
+  backdrop-filter: blur(5px);
+}
+
+.paymentToolbar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  /* background: #58585880; */
+  backdrop-filter: blur(5px);
+}
+
+/*
+.flex-container > div1 {
+  background-color: #f1f1f1;
+  width: 10px;
+  margin: 10px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+
+.flex-container > div1 {
+
+  width: 191px;
+  margin: 17px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+}
+*/
+.toolbar2 {
+  position: absolute;
+
+  width: 100%;
+  height: 25%;
+  bottom: 6%;
+  left: 0;
+  z-index: 11;
+}
+
+.baseLayerPicker {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 38px;
+  height: 38px;
+}
+
+.toolbar6 {
+  position: absolute;
+  width: 31.5%;
+  height: 7%;
+  bottom: 90%;
+  left: 95%;
+  z-index: 1050;
+}
+
+.toolbar8 {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  top: 20%;
+  left: 0%;
+
+  background: #00000080;
+}
+/*
+.toolbar9 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 1000;
+  background: #00000080;
+}*/
+
+.toolbar4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 14;
+  background: #00000080;
+}
+
+.toolbarForDescription {
+  position: absolute;
+  width: 15%;
+  height: 79%;
+  bottom: 18%;
+  left: 80%;
+  z-index: 16;
+  background: #00000080;
+  word-wrap: break-word;
+  color: white;
+  backdrop-filter: blur(50px);
+}
+/*
+.toolbarForDescription {
+  position: absolute;
+  width: 288px;
+  height: 700px;
+  bottom: 165px;
+  left: 1594px;
+  z-index: 16;
+  background: #00000080;
+  word-wrap: break-word;
+  color: white;
+  backdrop-filter: blur(50px);
+}*/
+
+.CrossStyle {
+  position: relative;
+  /* bottom: 25%; */
+  left: 270px;
+  z-index: 13;
+  color: white;
+}
+
+.CrossPaymentStyle {
+  position: relative;
+  bottom: 29px;
+  left: 935px;
+  z-index: 2000;
+  color: white;
+}
+.internalTableDescription1 {
+  position: relative;
+  text-align: left;
+  padding: 0px;
+  font-size: 14px;
+  left: 20px;
+  bottom: 92px;
+  word-wrap: break-word;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.internalTableDescription {
+  position: relative;
+  text-align: left;
+  padding: 0px;
+  font-size: 14px;
+  left: 20px;
+  bottom: 88px;
+  word-wrap: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.descriptionHeadline {
+  position: relative;
+  text-align: left;
+  padding: 0px;
+  font-size: 16px;
+  background: #00000080;
+  left: -3px;
+  bottom: 94px;
+  width: 449px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.blackdiv {
+  position: absolute;
+  width: 152%;
+  height: 70%;
+  bottom: 39.5%;
+  left: 0%;
+  z-index: 0;
+  /*  background: #00000080;
+  word-wrap: break-word;
+  color: white;
+  backdrop-filter: blur(50px);
+*/
+}
+.internalTableButtonDiv {
+  position: relative;
+  left: 0px;
+  text-align: left;
+  padding: 1px;
+  bottom: 82px;
+}
+
+/*
+.internalTableButtonDiv {
+  position: relative;
+  left: 20px;
+  text-align: left;
+  padding: 1px;
+}
+
+.toolbarForDescription {
+  position: absolute;
+  width: 337px;
+  height: 100px;
+  bottom: 800px;
+  left: 80%;
+  z-index: 16;
+  background: #00000080;
+  color: white;
+  backdrop-filter: blur(50px);
+}
+.CrossStyle {
+  position: relative;
+  
+  left: 455px;
+  z-index: 13;
+  color: white;
+}
+.internalTableDescription {
+  position: relative;
+  text-align: left;
+  padding: 0px;
+  font-size: 14px;
+  left: 20px;
+  bottom: 46px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.internalTableDescription1 {
+  position: relative;
+  text-align: left;
+  padding: 0px;
+  font-size: 14px;
+  left: 20px;
+  bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.descriptionHeadline {
+  position: relative;
+  text-align: left;
+  padding: 0px;
+  font-size: 16px;
+  left: 1px;
+  bottom: 57px;
+  width: 449px;
+  font-family: Arial, Helvetica, sans-serif;
+}*/
+
+.descriptionButton {
+  position: relative;
+  width: 100%;
+  background-color: rgba(36, 34, 34, 0.808);
+  border: none;
+  color: white;
+  padding: 12px 26px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.descriptionButton:hover {
+  background-color: #ffffff80;
+}
+
+.toolbar1 {
+  position: absolute;
+  width: 100%;
+  height: 4.5%;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: #58585880;
+}
+.btn-group buttonInternalDiv {
+  color: white;
+  padding: 3px 12px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: left;
+  left: 10%;
+}
+
+.btn-group buttonInternalDiv:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover 
+.btn-group buttonInternalDiv:hover {
+  background-color: #555555;
+  width: 185px;
+
+}
+*/
+
+/*
+.buttonInternalDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: #4caf50;  Green 
+  border: none;
+  color: white;
+  padding: 5px 75px;
+  text-align: Right;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 0px 0px;
+  cursor: pointer;
+}
+.button5 {
+  background-color: #555555;
+}
+.internalToolbar {
+  position: relative;
+
+  width: 10%;
+  height: 80%;
+  bottom: 10%;
+  left: 2%;
+  z-index: 11;
+
+  backdrop-filter: blur(5px);
+  color: white;
+}
+*/
+
+.internalToolbar {
+  position: relative;
+  /* width: 10%; */
+  height: 12%;
+  bottom: 10%;
+  left: 2%;
+  z-index: 11;
+  /* backdrop-filter: blur(5px); */
+  background-color: rgb(44, 43, 43);
+  color: white;
+}
+/*
+.internalBlackDiv {
+  position: relative;
+  width: 190px;
+  height: 25px;
+  background-color: black;
+}*/
+
+.internalBlackDiv {
+  position: relative;
+  width: 190px;
+  height: 10px;
+  /* background-color: black; */
+}
+
+.p2 {
+  position: relative;
+  color: white;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: white;
+  top: 0%;
+  left: 2%;
+}
+.p1 {
+  padding: 10px 30px;
+  color: white;
+  position: relative;
+  font-size: 30px;
+  top: 0%;
+}
+
+.customCheckBox {
+  position: absolute;
+  left: 175px;
+}
+#grad2 {
+  height: 1px;
+  color: white;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgb(253, 253, 253),
+    rgba(255, 0, 0, 0)
+  );
+  background-position: 30px 0px;
+  bottom: 10%;
+}
+
+/**/
+.button {
+  background-color: #0d0e0d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input#image-button {
+  background: #ccc url("http://localhost/Data/final/home.png") no-repeat top
+    left;
+  padding-left: 16px;
+  height: 16px;
+}
+
+.dropDownForProjects {
+  background-color: #00000066;
+  border: none;
+  color: white;
+  padding: 12px 66px;
+  font-size: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+}
+
+.btn {
+  background-color: #00000066;
+  border: none;
+  color: white;
+  padding: 12px 66px;
+  font-size: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+}
+.btn:hover {
+  background-color: #ffffff80;
+  color: white;
+}
+.btn:focus {
+  background-color: #00000080;
+  color: white;
+}
+h1 {
+  border-bottom: 1px solid white;
+
+  padding: 10px 30px;
+}
+#grad1 {
+  height: 1px;
+  padding: 2px 30px;
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, white, rgb(129, 129, 129));
+  background-position: 30px 10px;
+}
+/*UnitSearch COntainer*/
+#unitSearch {
+  padding: 10px 30px;
+}
+
+.slidecontainer {
+  padding: 70px 0px;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.sliderLeftText {
+  position: relative;
+  bottom: -54px;
+  left: 14px;
+}
+
+.unitSearchDiv {
+  /* margin-left: 0px; */
+  /* float: left; */
+  height: 150px;
+  width: 190px;
+  /* overflow-y: scroll; */
+  /* margin-bottom: 25px; */
+  /* left: 2px; */
+  background: #00000080;
+  backdrop-filter: blur(5px);
+}
+.textColor {
+  color: white;
+}
+.sliderRightText {
+  position: relative;
+  bottom: -19px;
+  left: 147px;
+}
+.sliderMiddleText {
+  position: relative;
+  bottom: -28px;
+  left: 30px;
+  text-align: left;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5px;
+  height: 25px;
+  background: #d3d3d3;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 2px;
+  height: 2px;
+  background: #2e2e2e;
+  cursor: pointer;
+}
+
+.btnInternalDiv {
+  position: relative;
+  background-color: Black;
+  border: none;
+  color: white;
+  padding: 0px 10px;
+  font-size: 10px;
+  cursor: pointer;
+  top: 43px;
+  left: 7px;
+}
+
+.btnInternalDiv1 {
+  position: relative;
+
+  padding: 0px 10px;
+  font-size: 10px;
+  /* top: 43px; */
+  left: 7px;
+}
+.toolbar5 {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  top: 0.5%;
+  left: 0%;
+  z-index: 1010;
+}
+
+.btnInternalDiv:hover {
+  background-color: #ffffff80;
+}
+
+/*
+@media only screen and (max-width: 926px) {
+  .toolbar4 {
+    display: none;
+  }
+  .toolbar5 {
+    display: none;
+  }
+  .toolbar6 {
+    display: none;
+  }
+  .toolbar7 {
+    display: none;
+  }
+}
+*/
+.btn-primary-outline {
+  background-color: transparent;
+}
+
+/*Image Gallery CSS*/
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -1692px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  right: -183px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+header {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  font-size: 25px;
+}
+
+#info {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+a {
+  color: #074e8c;
+}
+
+.scrollbar {
+  margin-left: 0px;
+  float: left;
+  height: 150px;
+  width: 190px;
+
+  overflow-y: scroll;
+  margin-bottom: 25px;
+  left: 2px;
+  background: #00000080;
+  backdrop-filter: blur(5px);
+}
+.force-overflow {
+  min-height: 160px;
+}
+
+#wrapper {
+  text-align: left;
+  width: 50px;
+  margin: auto;
+}
+
+/*
+ *  STYLE 3
+ */
+
+#style-3::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+#style-3::-webkit-scrollbar {
+  width: 1px;
+  background-color: #000000;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+  background-color: #f5f5f5;
+}
+
+/* 
+
+
+
+
+*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.gallery {
+  background: #eee;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+/* hover */
+
+#ck-button {
+  position: relative;
+  margin: 4px;
+  background-color: #252525;
+  border-radius: 4px;
+  /* border: 1px solid #d0d0d0; */
+  overflow: auto;
+  float: left;
+  top: 20px;
+  left: 5px;
+  /* font-size: 5px; */
+}
+
+#ck-button:hover {
+  background: rgb(110, 108, 108);
+}
+
+#ck-button label {
+  float: left;
+  width: 5.5em;
+  height: 1.73em;
+  font-weight: 100;
+}
+
+#ck-button label span {
+  text-align: center;
+  padding: 3px 0px;
+  display: block;
+}
+
+#ck-button label input {
+  position: absolute;
+  top: 9px;
+  z-index: -1;
+}
+
+#ck-button input:checked + span {
+  background-color: rgb(92, 85, 85);
+
+  color: #fff;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  /* For tablets: */
+  .btn {
+    background-color: #00000066;
+    border: none;
+    color: white;
+    padding: 7px 7px;
+    font-size: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+  }
+  .dropDownForProjects {
+    background-color: #00000066;
+    border: none;
+    color: white;
+    padding: 7px 7px;
+    font-size: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+  }
+  /*for behance*/
+  .CrossPaymentStyle {
+    position: relative;
+    bottom: 29px;
+    left: 48%;
+    z-index: 2000;
+    color: white;
+  }
+  .paymentImage {
+    position: relative;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    width: 1920px;
+    left: 0px;
+    top: 1%;
+    height: 25px;
+  }
+  #Amenities-Button {
+    display: none;
+  }
+  .paymentFrame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5%;
+    left: 0%;
+    z-index: 1000;
+  }
+
+  .videoFrame {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 5%;
+    left: 0%;
+    z-index: 1000;
+  }
+  /*hide unit search for now*/
+  /*
+  .toolbar2 {
+    display: none;
+  }*/
+  /*description*/
+  .toolbarForDescription {
+    position: absolute;
+    width: 15%;
+    height: 75%;
+    bottom: 10%;
+    left: 0%;
+    z-index: 16;
+    background: #b1151500;
+    word-wrap: break-word;
+    /* color: white; */
+    backdrop-filter: blur(0px);
+    /* transform: scale(0.3, 0.5); */
+  }
+  .internalTableDescription {
+    position: relative;
+    text-align: left;
+    padding: 0px;
+    font-size: 10px;
+    left: 20px;
+    bottom: 88px;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .internalTableDescription1 {
+    position: relative;
+    text-align: left;
+    padding: 0px;
+    font-size: 10px;
+    left: 20px;
+    bottom: 92px;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .imageForDisplayData {
+    display: none;
+  }
+  .CrossStyle {
+    position: relative;
+    bottom: 72px;
+    left: 110px;
+    z-index: 13;
+    color: white;
+  }
+  .descriptionButton {
+    position: relative;
+    width: 100%;
+    background-color: rgba(36, 34, 34, 0.808);
+    border: none;
+    color: white;
+    padding: 1px 30px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .toolbar2 {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 82%;
+    left: 10%;
+    z-index: 11;
+    transform: scale(0.7, 0.7);
+  }
+
+  .flex-container {
+    display: flex;
+    height: 171px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .blackdiv {
+    /* position: relative; */
+    position: absolute;
+    width: 152%;
+    height: 70%;
+    bottom: 39.5%;
+    left: 0%;
+    z-index: 0;
+    background: #00000080;
+    word-wrap: break-word;
+    color: white;
+    backdrop-filter: blur(50px);
+  }
+  /*unit search updated flex
+  .flex-container {
+    display: flex;
+    height: 1px;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .p1 {
+    padding: 0px 20px;
+    color: white;
+    position: relative;
+    font-size: 10px;
+    bottom: 40%;
+    
+  }*/
+}

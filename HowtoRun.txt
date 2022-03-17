@@ -1,0 +1,6 @@
+npm run build
+
+npm run prod
+
+
+for production
